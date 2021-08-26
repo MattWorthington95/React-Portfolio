@@ -1,8 +1,199 @@
-.name {
-  color: blue;
+.landing-page {
+  text-align: left;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.code {
+  margin-left: 40px;
+}
+
+h2 {
+  padding: 0;
+  margin: 40px 0;
+}
+
+span {
   font-size: 40px;
+  color: rgb(212, 212, 211, 255);
+  font-family: "Source Code Pro", monospace;
+  font-weight: 300;
+}
+
+.Typewriter {
+  font-size: 40px;
+  color: rgb(212, 212, 211, 255);
+  font-family: "Source Code Pro", monospace;
+  font-weight: 300;
+}
+
+.string {
+  color: rgba(209, 143, 122, 255);
+}
+
+.value {
+  color: rgba(58, 195, 252, 255);
+}
+.const {
+  color: rgba(75, 158, 211, 255);
+}
+
+.stringTemp {
+  color: rgba(150, 221, 252, 255);
 }
 
 .Typewriter__cursor {
   font-size: 40px;
+  font-weight: 500;
+}
+
+.aboutButton {
+  position: relative;
+  display: inline-block;
+  padding: 15px 60px;
+  margin-left: 40px;
+  margin-top: 40px;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.4);
+  background: #262c37;
+  font-size: 30px;
+  transition: 0.5s;
+  cursor: pointer;
+  font-family: "Source Code Pro", monospace;
+  font-weight: 300;
+}
+
+.aboutButton span {
+  display: block;
+  position: absolute;
+  background: rgba(58, 195, 252, 255);
+}
+
+.aboutButton span:nth-child(1) {
+  left: 0;
+  bottom: 0;
+  width: 3px;
+  height: 100%;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.5s;
+}
+
+.aboutButton:hover span:nth-child(1) {
+  transform: scaleY(1);
+  transform-origin: bottom;
+  transition: transform 0.5s;
+}
+
+.aboutButton span:nth-child(2) {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 3px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s;
+}
+
+.aboutButton:hover span:nth-child(2) {
+  transform: scaleX(1);
+  transform-origin: left;
+  transition: transform 0.5s;
+}
+
+.aboutButton span:nth-child(3) {
+  right: 0;
+  bottom: 0;
+  width: 3px;
+  height: 100%;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.5s;
+}
+
+.aboutButton:hover span:nth-child(3) {
+  transform: scaleY(1);
+  transform-origin: bottom;
+  transition: transform 0.5s;
+}
+
+.aboutButton span:nth-child(4) {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 3px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s;
+}
+
+.aboutButton:hover span:nth-child(4) {
+  transform: scaleX(1);
+  transform-origin: left;
+  transition: transform 0.5s;
+}
+.aboutButton:hover {
+  color: rgba(255, 255, 255, 1);
+  transition: all 0.4s ease;
+}
+
+.subtitle {
+  color: white;
+  display: flex;
+  margin-top: 25px;
+  font-weight: 300;
+  opacity: 0;
+  /* transform: translateY(3rem); */
+  animation: fadeInUp 3s ease 5s forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.aboutButton:hover i {
+  color: rgba(255, 255, 255, 1);
+  transition: all 0.4s ease;
+  transform: rotateZ(90deg) scale(var(--ggs, 1.75));
+}
+
+.gg-arrow-right-o {
+  box-sizing: border-box;
+  position: relative;
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  border: 2px solid;
+  margin-left: 50px;
+  transform: scale(var(--ggs, 1.75));
+  border-radius: 20px;
+  transition: all 0.4s ease;
+}
+
+.gg-arrow-right-o::after,
+.gg-arrow-right-o::before {
+  content: "";
+  display: inline-block;
+  box-sizing: border-box;
+  position: absolute;
+  right: 4px;
+}
+.gg-arrow-right-o::after {
+  width: 6px;
+  height: 6px;
+  border-top: 2px solid;
+  border-right: 2px solid;
+  transform: rotate(45deg);
+  bottom: 6px;
+}
+.gg-arrow-right-o::before {
+  width: 10px;
+  height: 2px;
+  bottom: 8px;
+  background: currentColor;
 }
