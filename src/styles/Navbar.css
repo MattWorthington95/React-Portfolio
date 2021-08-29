@@ -1,0 +1,45 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: rgba(30, 30, 30, 255);
+  color: white;
+  font-family: Helvetica;
+  font-weight: 300;
+  border-bottom: 5px solid rgba(58, 195, 252, 255);
+  height: 80px;
+  font-size: 30px;
+}
+
+.navbar__item {
+  margin-left: 40px;
+  padding: 16px 16px;
+  cursor: pointer;
+  vertical-align: middle;
+  transition: all 0.2s linear;
+  color: aliceblue;
+}
+
+.navbar__item a {
+  text-decoration: none;
+}
+
+.navbar__item:hover {
+  color: rgba(58, 195, 252, 255);
+}
+
+.sticky-wrapper {
+  position: relative;
+  height: 3rem; /* We need to change this value */
+}
+
+.sticky .sticky-inner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+.active-tab {
+  color: rgba(58, 195, 252, 255);
+}
