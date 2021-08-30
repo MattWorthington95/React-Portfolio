@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useEffect, useRef } from "react";
 import "../styles/Projects.css";
+import ReactCarousel from "./ReactCarousel";
 
 function Projects({ setSectionPositions }) {
   const myRef = useRef();
@@ -18,6 +19,7 @@ function Projects({ setSectionPositions }) {
     <div className="Projects" ref={myRef}>
       <div className="filler"></div>
       <h2>Projects</h2>
+      <ReactCarousel />
     </div>
   );
 }
