@@ -1,8 +1,11 @@
 .Contact {
   height: 100vh;
-  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.filler {
-  height: 80px;
+.Contact a {
+  color: white;
+  margin: 50px;
 }

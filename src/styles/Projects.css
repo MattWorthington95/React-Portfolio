@@ -1,6 +1,10 @@
 .Projects {
   height: 100vh;
-  color: aliceblue;
+  background-color: rgb(238, 238, 238);
+  color: black;
+}
+.Projects h2 {
+  font-size: 40px;
 }
 
 .filler {

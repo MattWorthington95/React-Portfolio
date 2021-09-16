@@ -25,14 +25,19 @@
 .carousel-container {
   margin: 0 auto;
   height: auto;
-  width: 60%;
+  width: 80%;
 }
 
 .carousel-status {
   font-size: 20px !important;
 }
 .legend {
-  font-size: 20px !important;
+  font-size: 12px !important;
+  opacity: 0.9 !important;
+}
+a {
+  word-wrap: break-word;
+  color: rgba(58, 195, 252, 255);
 }
 .thumb {
   cursor: pointer;
@@ -42,4 +47,25 @@
 }
 .control-next.control-arrow {
   width: 60px;
+}
+.extra-p {
+  display: none;
+}
+@media screen and (min-width: 300px) {
+  .legend {
+    font-size: 15px !important;
+    opacity: 0.9 !important;
+  }
+}
+@media screen and (min-width: 500px) {
+  .extra-p {
+    display: inline-block;
+  }
+}
+
+@media screen and (min-width: 760px) {
+  .legend {
+    font-size: 20px !important;
+    opacity: 0.9 !important;
+  }
 }

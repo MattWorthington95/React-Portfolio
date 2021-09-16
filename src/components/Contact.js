@@ -1,6 +1,7 @@
-import React from "react";
-import "../styles/Contact.css";
-import { useRef, useEffect } from "react";
+import React from 'react';
+import '../styles/Contact.css';
+import { useRef, useEffect } from 'react';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 function Contact({ setSectionPositions }) {
   const myRef = useRef();
   useEffect(() => {
@@ -16,7 +17,15 @@ function Contact({ setSectionPositions }) {
   return (
     <div className="Contact" ref={myRef}>
       <div className="filler"></div>
-      <h2>Contact</h2>
+      <h3>
+        {' '}
+        <a href="https://www.linkedin.com/in/matt-worthington/" target="blank">
+          <FaLinkedin size={100} />
+        </a>
+        <a href="https://github.com/MattWorthington95" target="blank">
+          <FaGithub size={100} />
+        </a>
+      </h3>
     </div>
   );
 }

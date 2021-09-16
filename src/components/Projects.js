@@ -1,7 +1,7 @@
-import { useState } from "react";
-import { useEffect, useRef } from "react";
-import "../styles/Projects.css";
-import ReactCarousel from "./ReactCarousel";
+import { useState } from 'react';
+import { useEffect, useRef } from 'react';
+import '../styles/Projects.css';
+import ReactCarousel from './ReactCarousel';
 
 function Projects({ setSectionPositions }) {
   const myRef = useRef();

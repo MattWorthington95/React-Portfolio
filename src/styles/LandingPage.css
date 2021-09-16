@@ -18,14 +18,14 @@ h2 {
 span {
   font-size: 40px;
   color: rgb(212, 212, 211, 255);
-  font-family: "Source Code Pro", monospace;
+  font-family: 'Source Code Pro', monospace;
   font-weight: 300;
 }
 
 .Typewriter {
   font-size: 40px;
   color: rgb(212, 212, 211, 255);
-  font-family: "Source Code Pro", monospace;
+  font-family: 'Source Code Pro', monospace;
   font-weight: 300;
 }
 
@@ -61,7 +61,7 @@ span {
   font-size: 30px;
   transition: 0.5s;
   cursor: pointer;
-  font-family: "Source Code Pro", monospace;
+  font-family: 'Source Code Pro', monospace;
   font-weight: 300;
 }
 
@@ -177,7 +177,7 @@ span {
 
 .gg-arrow-right-o::after,
 .gg-arrow-right-o::before {
-  content: "";
+  content: '';
   display: inline-block;
   box-sizing: border-box;
   position: absolute;
