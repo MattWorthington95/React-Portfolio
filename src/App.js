@@ -1,26 +1,26 @@
-import About from "./components/About";
-import "./styles/App.css";
+import About from './components/About';
+import './styles/App.css';
 
-import LandingPage from "./components/LandingPage";
+import LandingPage from './components/LandingPage';
 
-import Projects from "./components/Projects";
-import Contact from "./components/Contact";
-import Test from "./components/test";
-import { useEffect, useState, useRef } from "react";
+import Projects from './components/Projects';
+import Contact from './components/Contact';
+import Test from './components/test';
+import { useEffect, useState, useRef } from 'react';
 
-// window.onbeforeunload = function () {
-//   window.scrollTo(0, 0);
-// };
-// window.addEventListener("resize", function () {
-//   "use strict";
-//   window.location.reload();
-// });
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+};
+window.addEventListener('resize', function () {
+  'use strict';
+  window.location.reload();
+});
 
 function App() {
   const prevScrollY = useRef(0);
 
   const [sectionPositions, setSectionPositions] = useState(null);
-  const [currentSectionInView, setCurrentSectionInView] = useState("Home");
+  const [currentSectionInView, setCurrentSectionInView] = useState('Home');
 
   const [currentScrollPosition, setCurrentScrollPosition] = useState(false);
 
@@ -33,34 +33,34 @@ function App() {
 
     console.log(sectionPositions);
 
-    window.addEventListener("scroll", handleScroll, { passive: true });
+    window.addEventListener('scroll', handleScroll, { passive: true });
 
     if (sectionPositions) {
       if (
         currentScrollPosition >= sectionPositions.contact.top - 200 &&
         currentScrollPosition < sectionPositions.contact.bottom
       ) {
-        console.log("were in contact!!!!");
-        setCurrentSectionInView("Contact");
+        console.log('were in contact!!!!');
+        setCurrentSectionInView('Contact');
       } else if (
         currentScrollPosition >= sectionPositions.about.top - 300 &&
         currentScrollPosition < sectionPositions.about.bottom - 300
       ) {
-        console.log("were in about!!!!");
-        setCurrentSectionInView("About");
+        console.log('were in about!!!!');
+        setCurrentSectionInView('About');
       } else if (
         currentScrollPosition >= sectionPositions.projects.top - 300 &&
         currentScrollPosition < sectionPositions.projects.bottom
       ) {
-        console.log("were in project!!!!");
-        setCurrentSectionInView("Project");
+        console.log('were in project!!!!');
+        setCurrentSectionInView('Project');
       } else {
-        console.log("were NOT project!!!!");
-        setCurrentSectionInView("Not Project");
+        console.log('were NOT project!!!!');
+        setCurrentSectionInView('Not Project');
       }
     }
 
-    return () => window.removeEventListener("scroll", handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
   }, [currentScrollPosition]);
 
   // console.log(currentSectionInView);

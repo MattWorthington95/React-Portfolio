@@ -3,9 +3,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .Contact a {
   color: white;
   margin: 50px;
+  text-decoration: none;
+}
+
+.Contact a:hover {
+  color: rgba(58, 195, 252, 255);
+  margin: 50px;
+  text-decoration: none;
+  transition: all 0.2s linear;
 }

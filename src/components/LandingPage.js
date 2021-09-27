@@ -1,13 +1,13 @@
-import Typewriter from "typewriter-effect";
-import "../styles/LandingPage.css";
+import Typewriter from 'typewriter-effect';
+import '../styles/LandingPage.css';
 
-import { Link } from "react-scroll";
-import { useMediaQuery } from "./useMediaQuery";
+import { Link } from 'react-scroll';
+import { useMediaQuery } from './useMediaQuery';
 
 const LandingPage = () => {
-  let isPageSmall = useMediaQuery("(max-width: 768px)");
-  let isPageMedium = useMediaQuery("(min-width: 769px)");
-  let isPageLarge = useMediaQuery("(min-width: 1200px)");
+  let isPageSmall = useMediaQuery('(max-width: 768px)');
+  let isPageMedium = useMediaQuery('(min-width: 769px)');
+  let isPageLarge = useMediaQuery('(min-width: 1200px)');
   console.log(isPageLarge);
 
   return (
@@ -68,7 +68,7 @@ const LandingPage = () => {
             <span className="const">const&nbsp;</span>
             <span className="value">title&nbsp;</span> <span>=&nbsp;</span>
             <span className="string">
-              &quot;FullstackDeveloper&quot;<span>;</span>
+              &quot;Fullstack Developer&quot;<span>;</span>
             </span>
           </h2>
           <Typewriter

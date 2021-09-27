@@ -1,7 +1,7 @@
-import Navbar from "./Navbar";
-import "../styles/About.css";
-import { useRef, useEffect } from "react";
-import headshot from ".././images/me-orange.png";
+import Navbar from './Navbar';
+import '../styles/About.css';
+import { useRef, useEffect } from 'react';
+import headshot from '.././images/me-orange.png';
 
 const About = ({ currentSectionInView, setSectionPositions }) => {
   const myRef = useRef();
@@ -23,10 +23,11 @@ const About = ({ currentSectionInView, setSectionPositions }) => {
         <div className="info">
           <h2 id="about-me-h2">About Me</h2>
           <p>
-            Hello, My name is <b>Matt Worthington</b> and I am a{" "}
+            Hello, My name is <b>Matt Worthington</b> and I am a{' '}
             <b>FullStack Developer.</b> <br /> <br />I became a software
-            developer because I genuinely love to learn. I'm currently studying
-            with <b> Northcoders coding bootcamp</b> in addition to a part time{" "}
+            developer because I genuinely love to learn. I have recently
+            graduated from the <b> Northcoders coding bootcamp</b> in addition
+            to currently studying a part time{' '}
             <b> BSc (Honours) Computing and IT (Software) degree.</b> <br />
             <br />I am actively looking for an opportunity to work in the right
             environment that will help me progress into a full-stack role and
@@ -38,9 +39,9 @@ const About = ({ currentSectionInView, setSectionPositions }) => {
           </h2>
           <p>
             <b>
-              Node, &nbsp;React,&nbsp; Javascript, &nbsp;HTML, &nbsp;CSS,
-              &nbsp;Express, &nbsp;Bootstrap, &nbsp;PostgreSQL, &nbsp;Jest,
-              &nbsp;Github Actions
+              Node, &nbsp;React,&nbsp; React Native, &nbsp; Javascript,
+              &nbsp;HTML, &nbsp;CSS, &nbsp;Express, &nbsp; MongoDB,
+              &nbsp;PostgreSQL, &nbsp;Jest, &nbsp;Heroku, &nbsp;Github Actions
             </b>
           </p>
         </div>

@@ -2,6 +2,7 @@ import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import backEndAPI from '../images/backEndAPI.png';
 import frontEndProject from '../images/frontEndProject.png';
+import Hobbyist from '../images/Hobbyist.png';
 
 import '../styles/ReactCarousel.css';
 
@@ -67,6 +68,39 @@ function ReactCarousel() {
               The intention here was to build a fully interactive Frontend UI
               with React to take advantage of a Restful back API I built
               previously.{' '}
+            </p>
+          </p>
+        </div>
+        <div className="image">
+          <img src={Hobbyist} className="project" />
+          <p className="legend">
+            <b>React Native Mobile App </b> <br />
+            <br /> Backend Git Repo :{' '}
+            <a
+              href="https://github.com/MattWorthington95/hobbyist-be"
+              target="_blank"
+            >
+              https://github.com/MattWorthington95/hobbyist-be
+            </a>{' '}
+            <br /> Frontend Git Repo :{' '}
+            <a
+              href="https://github.com/MattWorthington95/hobbyist-fe"
+              target="_blank"
+            >
+              https://github.com/MattWorthington95/hobbyist-fe
+            </a>{' '}
+            <br /> Hobbyist Presentation Video :{' '}
+            <a
+              href="https://vimeo.com/615412317?fbclid=IwAR1Uq0RgJyQNUPdtMfQsfRLDs2EsJ3U-IETs7MHZGrezFYUCmQOLFQaRf1s"
+              target="_blank"
+            >
+              https://vimeo.com/Hobbyist
+            </a>{' '}
+            <br />
+            <br />
+            <p className="extra-p">
+              Developed a Mobile App working as part of a team using Node,
+              Express, MongoDB, React Native.{' '}
             </p>
           </p>
         </div>
