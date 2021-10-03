@@ -18,3 +18,12 @@
   text-decoration: none;
   transition: all 0.2s linear;
 }
+
+@media screen and (max-width: 600px) {
+  .Contact {
+    flex-direction: column;
+  }
+  a {
+    margin: 0 !important;
+  }
+}

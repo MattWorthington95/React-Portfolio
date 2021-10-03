@@ -21,16 +21,16 @@ function Contact({ setSectionPositions }) {
       <div className="filler"></div>
 
       <a href="https://www.linkedin.com/in/matt-worthington/" target="blank">
-        <FaLinkedin size={100} />
+        <FaLinkedin className="icons" size={100} />
         <h4>LinkedIn</h4>
       </a>
 
       <a href="https://github.com/MattWorthington95" target="blank">
-        <FaGithub size={100} />
+        <FaGithub className="icons" size={100} />
         <h4>GitHub</h4>
       </a>
       <a href={CV} download>
-        <FaPortrait size={100} />
+        <FaPortrait className="icons" size={100} />
         <h4>CV</h4>
       </a>
     </div>
